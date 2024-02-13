@@ -1,15 +1,25 @@
 # Dead-On-Time
 ## Elevator Pitch
-- Traditional FIRE models often oversimplify financial forecasting by assuming constant rates over time.
+- Traditional FIRE models often oversimplify financial forecasting by assuming deterministic rates over time.
 - This tool uses historical data to generate the probability various outcomes, providing a more comprehensive view with risk explicitly expressed.
-- Tailored towards Australian-specific factors like inflation, cash, bond rates, and global stock rates.
+- Tailored towards Australian-specific factors like inflation, cash, bond rates, while incorporating global measures for investment instrucments such as global stock markets & global commodities.
 - Caters to the two-tier Superannuation retirement setup in Australia.
-- Integrates a mortality component, predicting the likelihood of being liquid, broke, or dead. #Actuarial
+- Integrates a mortality component, predicting the likelihood of being liquid, broke, or dead.
 - Stretch goals includes Optimal Portfolio Distribution and integration with monthly income/expenses/savings summary info.
 
 ## Financial Modelling
 
+
 ## Economic Modelling
+- Global stock market proxied via FTSE All World index. ARIMA(0,2,2) model.
+-  Australian 10 year Bond rates proxies the Australian risk-free rate. Random walk model.
+-  Cash Rate Targets extracted via RBA. Random walk model.
+-  General commodities market proxied via Bloomberg Commodity. Random walk model.
+-  Gold market proxied via Bloomberg Gold. Random walk model with drift.
+-  Australian property market measured via Residential Property Price Index. Random walk model with drift.
+-  Inflation measured by CPI. Used to adjust nominal rates above for inflation. Simple mean model
+
+**This assumes independent variables. In reality many of these rates (especially Australian rates) will be correlated to each other. VAR-GARCH models are being explored to account for such interactions between time series variables not only in current time, but in previous periods as well.**
 ```
 Column: FTSE All World 
 Series: ts_data 
