@@ -1,4 +1,4 @@
-#Dead On Time
+# Dead On Time
 An actuarial inspired improvement to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
 
 ## Elevator Pitch
@@ -136,3 +136,13 @@ Training set 1.065337e-16 1.411586 0.9424
                    MPE    MAPE      MASE      ACF1
 Training set -21.20003 38.9163 0.8567273 0.2837769
 ```
+### Improvements
+- Separate Net Worth into Assets & Liabilities
+- Different optimal asset allocations for Super & outside Super
+- Use VAR model to link separate financial models together
+- Assumes same spending while working as retired
+- Simplistic view on income levels; maybe can incorporate some implicit wage growth?
+- Property is not as granular as other investment vehicles
+- No spending flex. Can incorporate
+- Assumes super is standard 11.5% of net worth; can be more specific & tailored.
+- Should I or should I not include PPOR? Decided to include b/c you can use PPOR to generate income (HELOC or Reverse Mortgage)
