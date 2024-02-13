@@ -2,7 +2,12 @@
 An actuarial inspired improvement to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
 
 ## Elevator Pitch
-Traditional financial independence retire early (FIRE) models often oversimplify financial forecasting by assuming deterministic rates over time. This tool offers a sophisticated alternative, leveraging historical data to generate stochastic outcomes and providing a more comprehensive view with risk explicitly expressed. Tailored specifically for Australian users, the tool incorporates Australian-specific factors such as inflation, cash, bond rates, and global stock markets while accommodating the unique two-tier Superannuation retirement setup. Additionally, the tool integrates a mortality component, predicting the likelihood of various outcomes including sufficiency, bankruptcy, and mortality. Stretch goals include implementing Optimal Portfolio Distribution and integrating with monthly income/expenses/savings summaries.
+- Traditional FIRE models often oversimplify financial forecasting by assuming constant rates over time.
+- This tool uses historical data to generate the probability various outcomes, providing a more comprehensive view with risk explicitly expressed.
+- Tailored towards Australian-specific factors like inflation, cash, bond rates, and global stock rates.
+- Caters to the two-tier Superannuation retirement setup in Australia.
+- Integrates a mortality component, predicting the likelihood of being liquid, broke, or dead.
+- Stretch goals include implementing Optimal Portfolio Distribution and integrating with monthly income/expenses/savings summaries.
 
 ## Financial Modelling
 The tool separates net worth into assets and liabilities, allowing for a more granular analysis of financial health. Different optimal asset allocations are prescribed for Super and non-Super funds, reflecting the distinct risks acceptance, characteristics and regulations of each. The modelling approach considers various factors, including spending flexibility, implicit wage growth, and the inclusion of the primary place of residence (PPOR) as a potential income-generating asset. There are uplifts and refinements of the models to improve accuracy and relevance in the pipeline.
