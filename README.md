@@ -1,4 +1,4 @@
-# Dead-On-Time
+# Dead On Time
 ## Elevator Pitch
 - Traditional FIRE models often oversimplify financial forecasting by assuming deterministic rates over time.
 - This tool uses historical data to generate the probability various outcomes, providing a more comprehensive view with risk explicitly expressed.
