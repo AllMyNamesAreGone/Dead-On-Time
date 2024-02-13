@@ -2,24 +2,20 @@
 An actuarial inspired improvement to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
 
 ## Elevator Pitch
-- Traditional FIRE models often oversimplify financial forecasting by assuming deterministic rates over time.
-- This tool uses historical data to generate the probability various outcomes, providing a more comprehensive view with risk explicitly expressed.
-- Tailored towards Australian-specific factors like inflation, cash, bond rates, while incorporating global measures for investment instrucments such as global stock markets & global commodities.
-- Caters to the two-tier Superannuation retirement setup in Australia.
-- Integrates a mortality component, predicting the likelihood of being liquid, broke, or dead.
-- Stretch goals includes Optimal Portfolio Distribution and integration with monthly income/expenses/savings summary info.
+Traditional financial independence retire early (FIRE) models often oversimplify financial forecasting by assuming deterministic rates over time. This tool offers a sophisticated alternative, leveraging historical data to generate stochastic outcomes and providing a more comprehensive view with risk explicitly expressed. Tailored specifically for Australian users, the tool incorporates Australian-specific factors such as inflation, cash, bond rates, and global stock markets while accommodating the unique two-tier Superannuation retirement setup. Additionally, the tool integrates a mortality component, predicting the likelihood of various outcomes including sufficiency, bankruptcy, and mortality. Stretch goals include implementing Optimal Portfolio Distribution and integrating with monthly income/expenses/savings summaries.
 
 ## Financial Modelling
-
+The tool separates net worth into assets and liabilities, allowing for a more granular analysis of financial health. Different optimal asset allocations are prescribed for Super and non-Super funds, reflecting the distinct risks acceptance, characteristics and regulations of each. The modelling approach considers various factors, including spending flexibility, implicit wage growth, and the inclusion of the primary place of residence (PPOR) as a potential income-generating asset. There are uplifts and refinements of the models to improve accuracy and relevance in the pipeline.
 
 ## Economic Modelling
+A suite of economic models are employed to capture the complexity of financial markets and macroeconomic indicators. Key models include:
 - Global stock market proxied via FTSE All World index. ARIMA(0,2,2) model.
--  Australian 10 year Bond rates proxies the Australian risk-free rate. Random walk model.
--  Cash Rate Targets extracted via RBA. Random walk model.
--  General commodities market proxied via Bloomberg Commodity. Random walk model.
--  Gold market proxied via Bloomberg Gold. Random walk model with drift.
--  Australian property market measured via Residential Property Price Index. Random walk model with drift.
--  Inflation measured by CPI. Used to adjust nominal rates above for inflation. Simple mean model
+- Australian 10 year Bond rates proxies the Australian risk-free rate. Random walk model.
+- Cash Rate Targets extracted via RBA. Random walk model.
+- General commodities market proxied via Bloomberg Commodity. Random walk model.
+- Gold market proxied via Bloomberg Gold. Random walk model with drift.
+- Australian property market measured via Residential Property Price Index. Random walk model with drift.
+- Inflation measured by CPI. Used to adjust nominal rates above for inflation. Simple mean model
 
 **This assumes independent variables. In reality many of these rates (especially Australian rates) will be correlated to each other. VAR-GARCH models are being explored to account for such interactions between time series variables not only in current time, but in previous periods as well.**
 ```
@@ -136,13 +132,30 @@ Training set 1.065337e-16 1.411586 0.9424
                    MPE    MAPE      MASE      ACF1
 Training set -21.20003 38.9163 0.8567273 0.2837769
 ```
-### Improvements
-- Separate Net Worth into Assets & Liabilities
-- Different optimal asset allocations for Super & outside Super
-- Use VAR model to link separate financial models together
-- Assumes same spending while working as retired
-- Simplistic view on income levels; maybe can incorporate some implicit wage growth?
-- Property is not as granular as other investment vehicles
-- No spending flex. Can incorporate
-- Assumes super is standard 11.5% of net worth; can be more specific & tailored.
-- Should I or should I not include PPOR? Decided to include b/c you can use PPOR to generate income (HELOC or Reverse Mortgage)
+### Improvements and Future Directions
+**Asset and Liability Segmentation:**
+- Separate net worth into distinct categories of assets and liabilities for clearer financial analysis.
+
+**Tailored Asset Allocation:**
+- Customize optimal asset allocations for superannuation and non-superannuation funds to align with individual goals and risk tolerance.
+
+**Integration with VAR Model:**
+- Utilize a Vector Autoregression (VAR) model to integrate various financial models and enhance the overall forecasting accuracy.
+
+**Dynamic Spending Modeling:**
+- Implement dynamic spending models to accommodate changes in financial needs and lifestyle preferences throughout retirement.
+
+**Income Growth Projection:**
+- Enhance income level projections by incorporating implicit wage growth factors for a more realistic financial outlook.
+
+**Granular Property Investment Analysis:**
+- Improve granularity in property investment analysis to provide more detailed insights into real estate assets.
+
+**Flexibility in Spending Patterns:**
+- Introduce flexibility in spending patterns to adapt to changing financial circumstances and individual preferences.
+
+**Customized Superannuation Planning:**
+- Tailor superannuation planning by considering individual circumstances rather than relying on a standard percentage of net worth.
+
+**Inclusion of Primary Residence:**
+- Consider including the primary residence in financial planning to explore potential income-generating opportunities such as Home Equity Line of Credit (HELOC) or Reverse Mortgage.
