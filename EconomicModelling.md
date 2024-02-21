@@ -12,7 +12,9 @@ A suite of economic models are employed to capture the complexity of financial m
 - Gold market proxied via Bloomberg Gold. Random walk model with drift.
 - Australian property market measured via Residential Property Price Index. Random walk model with drift.
 - Inflation measured by CPI. Used to adjust nominal rates above for inflation. Simple mean model
+
 **This assumes independent variables. In reality many of these rates (especially Australian rates) will be correlated to each other. VAR-GARCH models are being explored to account for such interactions between time series variables not only in current time, but in previous periods as well.**
+
 ```
 Column: FTSE All World 
 Series: ts_data 
