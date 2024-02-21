@@ -1,10 +1,10 @@
 ---
-title: Home
+title: 1. Home
 layout: template
 filename: index
 --- 
 # Dead On Time
-An actuarial perspective to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
+An actuarial iteration to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
 
 ## Elevator Pitch
 - Traditional FIRE models often oversimplify financial forecasting by assuming constant rates over time.
