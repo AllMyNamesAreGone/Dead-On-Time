@@ -1,7 +1,7 @@
 ---
 title: Economic Modelling
 layout: template
-filename: EconomicModelling
+filename: 3_EconomicModelling
 --- 
 # Economic Modelling
 A suite of economic models are employed to capture the complexity of financial markets and macroeconomic indicators. Key models include:
