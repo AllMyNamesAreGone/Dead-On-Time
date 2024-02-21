@@ -1,3 +1,8 @@
+---
+title: PAGE TITLE HERE
+layout: template
+filename: NAME OF THIS .md FILE HERE
+--- 
 # Dead On Time
 An actuarial perspective to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.
 
