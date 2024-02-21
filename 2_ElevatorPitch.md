@@ -1,7 +1,7 @@
 ---
 title: Elevator Pitch
 layout: template
-filename: ElevatorPitch
+filename: 2_ElevatorPitch
 --- 
 # Elevator Pitch
 - Traditional FIRE models often oversimplify financial forecasting by assuming constant rates over time.
