@@ -1,5 +1,5 @@
 ---
-title: 1. Home
+title: Home
 layout: template
 filename: index
 --- 
