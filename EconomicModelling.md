@@ -4,16 +4,18 @@ layout: template
 filename: EconomicModelling
 --- 
 # Economic Modelling
-A suite of economic models are employed to capture the complexity of financial markets and macroeconomic indicators. Key models include:
-- Global stock market proxied via FTSE All World index. ARIMA(0,2,2) model.
-- Australian 10 year Bond rates proxies the Australian risk-free rate. Random walk model.
-- Cash Rate Targets extracted via RBA. Random walk model.
-- General commodities market proxied via Bloomberg Commodity. Random walk model.
-- Gold market proxied via Bloomberg Gold. Random walk model with drift.
-- Australian property market measured via Residential Property Price Index. Random walk model with drift.
-- Inflation measured by CPI. Used to adjust nominal rates above for inflation. Simple mean model
+The economic modelling framework employs a diverse suite of models designed to capture the intricacies of financial markets and macroeconomic indicators. Key components of our model portfolio include:
 
-**This assumes independent variables. In reality many of these rates (especially Australian rates) will be correlated to each other. VAR-GARCH models are being explored to account for such interactions between time series variables not only in current time, but in previous periods as well.**
+- **Global Stock Market:** Proxied by the FTSE All World index, an ARIMA(0,2,2) model is utilised to forecast trends & fluctuations in global stock markets.
+- **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.
+- **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.
+- **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.
+- **Gold Market:** Utilising the Bloomberg Gold index, a random walk model with drift is implemented to analyse & forecast trends in the gold market.
+- **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a random walk model with drift to assess & predict movements in the Australian property market.
+- **Inflation:** Monitored via the Consumer Price Index (CPI), inflation serves as a critical factor in the economic analysis. A simple mean model is applied to adjust nominal rates for inflationary pressures.
+
+_While the initial modelling assumptions treat these variables as independent, it is recognised the inherent correlations between many of these rates, particularly within the Australian context. To address this, VAR-GARCH models are being explored. These models aim to capture the interactions between time series variables, not only in the current period but also in preceding periods, providing a more comprehensive understanding of the dynamic economic landscape._
+
 ```
 Column: FTSE All World 
 Series: ts_data 
