@@ -16,6 +16,9 @@ The economic modelling framework employs a diverse suite of models designed to c
 
 _While the initial modelling assumptions treat these variables as independent, it is recognised the inherent correlations between many of these rates, particularly within the Australian context. To address this, VAR-GARCH models are being explored. These models aim to capture the interactions between time series variables, not only in the current period but also in preceding periods, providing a more comprehensive understanding of the dynamic economic landscape._
 
+![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/100e17fe-2a76-4478-89f7-ed2b86d3ec1c)
+
+
 ```
 Column: FTSE All World 
 Series: ts_data 
