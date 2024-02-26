@@ -6,9 +6,11 @@ filename: index
 
 **An actuarial addition to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.**
 
+
+
 #### Work In Progress
 
-The FIRE (Financial Independence Retire Early) movement has sparked a wave of interest in reimagining traditional approaches to personal finance, inspiring individuals to pursue financial independence & early retirement. Recognising the limitations of conventional FIRE tools, this project seeks to introduce a probability-based tool to the FIRE movement.
+The FIRE ([Financial Independence Retire Early](https://earlyretirementnow.com/2023/03/10/the-basics-of-fire/)) movement has sparked a wave of interest in reimagining traditional approaches to personal finance, inspiring individuals to pursue financial independence & early retirement. Recognising the limitations of conventional FIRE tools, this project seeks to introduce a probability-based tool to the FIRE movement.
 
 Traditional FIRE models often oversimplify financial projections by assuming deterministic rates over time, neglecting the nuanced fluctuations inherent in economic markets. This project breaks away from this paradigm by harnessing historical data to generate stochastic outcome probabilities, offering a more comprehensive view of economic trajectories with risk explicitly expressed. Tailored specifically to the Australian context, our model integrates key factors such as local inflation, cash, bond rates, and global stock rates, catering to the unique intricacies of the Australian financial landscape.
 
