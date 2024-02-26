@@ -6,6 +6,9 @@ filename: index
 
 **An actuarial addition to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.**
 \
+
+\
+
 \
 #### Work In Progress
 
