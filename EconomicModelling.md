@@ -7,8 +7,9 @@ filename: EconomicModelling
 The economic modelling framework employs a diverse suite of models designed to capture the intricacies of financial markets and macroeconomic indicators. Key components of our model portfolio include:
 
 - **Global Stock Market:** Proxied by the FTSE All World index, an ARIMA(0,2,2) model is utilised to forecast trends & fluctuations in global stock markets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/100e17fe-2a76-4478-89f7-ed2b86d3ec1c)
-- **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.
-- **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.
+- **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/6c9908e1-403c-4571-99be-9148b88fc6f7)
+- **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/19f14f12-94b4-479e-a750-fe673eaad5ca)
+
 - **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.
 - **Gold Market:** Utilising the Bloomberg Gold index, a random walk model with drift is implemented to analyse & forecast trends in the gold market.
 - **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a random walk model with drift to assess & predict movements in the Australian property market.
