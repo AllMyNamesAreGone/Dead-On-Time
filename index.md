@@ -5,9 +5,9 @@ filename: index
 --- 
 
 **An actuarial addition to traditional personal-line financial tools for the Financial Independence Retire Early (FIRE) movement.**
-
-
-
+\
+\
+\
 #### Work In Progress
 
 The FIRE ([Financial Independence Retire Early](https://earlyretirementnow.com/2023/03/10/the-basics-of-fire/)) movement has sparked a wave of interest in reimagining traditional approaches to personal finance, inspiring individuals to pursue financial independence & early retirement. Recognising the limitations of conventional FIRE tools, this project seeks to introduce a probability-based tool to the FIRE movement.
