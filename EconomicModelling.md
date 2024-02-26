@@ -6,7 +6,7 @@ filename: EconomicModelling
 # Economic Modelling
 The economic modelling framework employs a diverse suite of models designed to capture the intricacies of financial markets and macroeconomic indicators. Key components of our model portfolio include:
 
-- **Global Stock Market:** Proxied by the FTSE All World index, an ARIMA(0,2,2) model is utilised to forecast trends & fluctuations in global stock markets.
+- **Global Stock Market:** Proxied by the FTSE All World index, an ARIMA(0,2,2) model is utilised to forecast trends & fluctuations in global stock markets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/100e17fe-2a76-4478-89f7-ed2b86d3ec1c)
 - **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.
 - **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.
 - **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.
@@ -16,7 +16,6 @@ The economic modelling framework employs a diverse suite of models designed to c
 
 _While the initial modelling assumptions treat these variables as independent, it is recognised the inherent correlations between many of these rates, particularly within the Australian context. To address this, VAR-GARCH models are being explored. These models aim to capture the interactions between time series variables, not only in the current period but also in preceding periods, providing a more comprehensive understanding of the dynamic economic landscape._
 
-![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/100e17fe-2a76-4478-89f7-ed2b86d3ec1c)
 
 
 ```
