@@ -14,9 +14,9 @@ The economic modelling framework employs a diverse suite of models designed to c
 
 - **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/a99f227b-d737-46fc-8cfe-ce32c73c3364)
 
-- **Gold Market:** Utilising the Bloomberg Gold index, a random walk model with drift is implemented to analyse & forecast trends in the gold market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/2d82ca8f-cbe2-49c4-83d1-3064bbf97d9f)
+- **Gold Market:** Utilising the Bloomberg Gold index, a white noise process is implemented to analyse & forecast trends in the gold market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/2d82ca8f-cbe2-49c4-83d1-3064bbf97d9f)
 
-- **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a random walk model with drift to assess & predict movements in the Australian property market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/753401bb-812e-430b-851b-6f0d92751aab)
+- **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a white noise process to assess & predict movements in the Australian property market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/753401bb-812e-430b-851b-6f0d92751aab)
 
 - **Inflation:** Monitored via the Consumer Price Index (CPI), inflation serves as a critical factor in the economic analysis. A simple mean model is applied to adjust nominal rates for inflationary pressures.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/d5ba175a-bd53-4c33-914c-5ed54bc5d895)
 
