@@ -9,17 +9,23 @@ The economic modelling framework employs a diverse suite of models designed to c
 - **Global Stock Market:** Proxied by the FTSE All World index, an ARIMA(0,2,2) model is utilised to forecast trends & fluctuations in global stock markets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/100e17fe-2a76-4478-89f7-ed2b86d3ec1c)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/12ac59a2-9fce-45a4-b7b4-87ae7fc4c855)
 
 
-- **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/6c9908e1-403c-4571-99be-9148b88fc6f7)
+- **Australian 10-Year Bond Rates:** Serving as a proxy for the Australian risk-free rate, a random walk model is utilised to analyse & predict movements in long-term bond rates.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/6c9908e1-403c-4571-99be-9148b88fc6f7)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/d0dd52fe-ea42-47f5-b694-4ce72a6bcef8)
 
-- **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/19f14f12-94b4-479e-a750-fe673eaad5ca)
 
-- **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/a99f227b-d737-46fc-8cfe-ce32c73c3364)
+- **Cash Rate Targets:** Extracted from the Reserve Bank of Australia (RBA), a random walk model is utilised to forecast changes in the RBA's cash rate targets.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/19f14f12-94b4-479e-a750-fe673eaad5ca)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/c7d463f9-9cee-46d5-a46a-b17111a0555b)
 
-- **Gold Market:** Utilising the Bloomberg Gold index, a white noise process is implemented to analyse & forecast trends in the gold market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/2d82ca8f-cbe2-49c4-83d1-3064bbf97d9f)
 
-- **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a white noise process to assess & predict movements in the Australian property market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/753401bb-812e-430b-851b-6f0d92751aab)
+- **General Commodities Market:** Represented by the Bloomberg Commodity index, the modelling approach employs a random walk model to capture & predict movements in the general commodities market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/a99f227b-d737-46fc-8cfe-ce32c73c3364)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/f034d35d-44ad-42a6-bcf0-33fc53ad48a9)
 
-- **Inflation:** Monitored via the Consumer Price Index (CPI), inflation serves as a critical factor in the economic analysis. A simple mean model is applied to adjust nominal rates for inflationary pressures.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/d5ba175a-bd53-4c33-914c-5ed54bc5d895)
+
+- **Gold Market:** Utilising the Bloomberg Gold index, a white noise process is implemented to analyse & forecast trends in the gold market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/2d82ca8f-cbe2-49c4-83d1-3064bbf97d9f)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/52b2856b-f915-42e7-83a6-7197c3b6be72)
+
+
+- **Australian Property Market:** Measured through the Residential Property Price Index, the modelling framework incorporates a white noise process to assess & predict movements in the Australian property market.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/753401bb-812e-430b-851b-6f0d92751aab)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/96f7ecbe-c04b-4af2-bd28-6a7a47fae88a)
+
+
+- **Inflation:** Monitored via the Consumer Price Index (CPI), inflation serves as a critical factor in the economic analysis. A simple mean model is applied to adjust nominal rates for inflationary pressures.![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/d5ba175a-bd53-4c33-914c-5ed54bc5d895)![image](https://github.com/AllMyNamesAreGone/Dead-On-Time/assets/39043485/cb477338-329c-422c-95e4-4055d6ad370a)
+
 
 
 _While the initial modelling assumptions treat these variables as independent, it is recognised the inherent correlations between many of these rates, particularly within the Australian context. To address this, VAR-GARCH models are being explored. These models aim to capture the interactions between time series variables, not only in the current period but also in preceding periods, providing a more comprehensive understanding of the dynamic economic landscape._
